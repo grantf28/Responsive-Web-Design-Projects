@@ -13,11 +13,8 @@ Survey Page
     
     #Content
     1. I can see a title with id="title" in H1 sized text.
-    
     2. I can see a short explanation with id="description" in P sized text.
-    
     3. I can see a <form> with id="survey-form".
-    
     4. Inside the form element, I am required to enter my name in a field with id="name". If I do not enter a name I will see an HTML5 validation error.
     5. Inside the form element, I am required to enter an email in a field with id="email". If I do not enter an email I will see an HTML5 validation error.
     6. If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
