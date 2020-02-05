@@ -2,8 +2,10 @@
 Freecodecamp Responsive Web Design Projects Projects.
 
 Tribute Page
-  HTML/Basic CSS
-    Use of img, Lists and Imported Fonts.
+
+   #Content
+    1. HTML/Basic CSS
+    2. Use of img, Lists and Imported Fonts.
     
 Survey Page
   HTML/CSS 
