@@ -17,6 +17,7 @@ body {
 
 header {
     grid-area: 1 / 1 / 2 / 4;
+    background-color: aquamarine;
 }
 
 section.contact {
@@ -42,17 +43,43 @@ footer {
 
 nav {
     display: flex;
-    border: 0.5em solid lawngreen;
-    text-align: center;
-    
+    flex-wrap: wrap;
+    margin-bottom: 0.8em;
 }
 
 .nav-link {
-    flex: 1 1 5em;
-    font-size: 40px;
-    background-color: lightblue;
-    border: 10px solid lightcoral;
-    
+    flex: 1;
+    font-size: 2em;
 }
 
+a.nav-link {
+    display:inline-block;
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0.3em 0.3em 0.3em 0.3em;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family:'Roboto',sans-serif;
+    font-weight:400;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.15s;
+}
 
+a.nav-link:hover{
+    color:#DDDDDD;
+    border-color:#DDDDDD;
+}
+
+a.nav-link:active{
+    color:#BBBBBB;
+    border-color:#BBBBBB;
+}
+
+@media all and (max-width:30em){
+    a.nav-link{
+    display:block;
+    margin:0.4em auto;
+    }
+}
