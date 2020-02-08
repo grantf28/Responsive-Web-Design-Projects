@@ -1,0 +1,58 @@
+html {
+    margin: 0;
+    
+}
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 5fr 5fr 1fr;
+    height: 100vh;
+    margin: 2em;
+}
+
+header {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+section.contact {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+iframe {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+main {
+    grid-area: 3 / 1 / 3 / 3;
+}
+
+section.packages {
+    grid-area: 4 / 1 / 5 / 4;
+}
+
+footer {
+    grid-area: 5 / 1 / 6 / 4;
+}
+
+
+nav {
+    display: flex;
+    border: 0.5em solid lawngreen;
+    text-align: center;
+    
+}
+
+.nav-link {
+    flex: 1 1 5em;
+    font-size: 40px;
+    background-color: lightblue;
+    border: 10px solid lightcoral;
+    
+}
+
+
