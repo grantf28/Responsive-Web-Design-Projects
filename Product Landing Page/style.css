@@ -1,70 +1,48 @@
+
 html {
     margin: 0;
+    padding: 0;
+    height: 100vh;
+}
     
-}
+
 body {
+    background-image: linear-gradient( 179.7deg,  rgba(197,214,227,1) 2.9%, rgba(144,175,202,1) 97.1% );
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
-    height: 100vh;
 }
-
-.container {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 0.5fr 1fr 5fr 5fr 1fr;
-    height: 100vh;
-    margin: 2em;
-}
-
-header {
-    grid-area: 1 / 1 / 2 / 4;
-    background-color: aquamarine;
-}
-
-section.contact {
-    grid-area: 2 / 1 / 3 / 4;
-}
-
-iframe {
-    grid-area: 3 / 3 / 4 / 4;
-}
-
-main {
-    grid-area: 3 / 1 / 3 / 3;
-}
-
-section.packages {
-    grid-area: 4 / 1 / 5 / 4;
-}
-
-footer {
-    grid-area: 5 / 1 / 6 / 4;
-}
-
 
 nav {
+    font-size: 1em;
+    background-image: linear-gradient( 180.2deg,  rgba(30, 33, 48, 0.808) 6.8%, rgba(68, 137, 172, 0.918) 131% );
+    width: 100%;
+    height: 100%;
+}
+nav ul {
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0.8em;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+nav ul li {
+    cursor: pointer;
+    flex: auto;
+    
+}
 .nav-link {
-    flex: 1;
-    font-size: 2em;
-}
-
-a.nav-link {
-    display:inline-block;
-    padding:0.5em 3em;
-    border:0.16em solid #FFFFFF;
-    margin:0.3em 0.3em 0.3em 0.3em;
-    box-sizing: border-box;
+    flex: auto;
     text-decoration:none;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-family:'Roboto',sans-serif;
     font-weight:400;
     color:#FFFFFF;
-    text-align:center;
+    text-align: center;
+    line-height: 4em;
     transition: all 0.15s;
+
 }
 
 a.nav-link:hover{
@@ -77,9 +55,30 @@ a.nav-link:active{
     border-color:#BBBBBB;
 }
 
-@media all and (max-width:30em){
-    a.nav-link{
-    display:block;
-    margin:0.4em auto;
+@media all and (max-width: 30em) {
+    nav ul {
+        flex-direction: column;
     }
+    nav ul li {
+        text-align: center;
+    }
+    body {
+        background-position: center;
+        background-size: cover;
+        background-repeat: repeat;
+    }
+    
 }
+.bouncy{
+    animation:bouncy 5s infinite linear;
+    position:relative;
+    }
+    @keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+    }
