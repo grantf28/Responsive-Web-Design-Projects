@@ -1,32 +1,92 @@
 <!DOCTYPE html>
 <html lang="eng">
 
-<head>
+  <head>
     <title>Product Landing Page</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
-</head>
+  </head>
 
-<body>
-    <header id="header">
-        <nav id="nav-bar">
-            <ul>
-                <li><img id="header-img" class="logo bouncy" style="animation-delay:0.21s" src="logo.png" /></li>
-                <li><a href="#" class="nav-link bouncy" style="animation-delay:0.07s">Features</a></li>
-                <li><a href="#" class="nav-link bouncy" style="animation-delay:0.14s">Description</a></li>
-                <li><a href="#" class="nav-link bouncy" style="animation-delay:0.21s">Packages</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <section class="contact">
-            <form action="input" id="email"></form>
-        </section>
-        <main>main</main>
-        <iframe>video</iframe>
-        <section class="packages">packages</section>
-        <footer>contact links terms privacy</footer>
-    </div>
-</body>
+    <body>
+        <header id="header" class="grid">
+            <div class="logo">
+                <img id="header-img" src="logo.png" alt="company logo" />
+            </div>
 
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#description">How It Works</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="sign-up grid">
+            <h1>Lorem ipsum dolor</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email" required />
+                <div id="submit-btn">
+                    <input id="submit" type="submit" value="Submit" class="nav-link"/>
+                </div>
+            </form>
+        </div>
+
+        <div class="product-video">
+            <h2>Product Video</h2>
+            <div class="video">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/hDpZHz5UG0o?start=297" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <section id="pricing">
+            <div class="product" id="tenor">
+              <div class="level">Tenor Trombone</div>
+              <h2>$600</h2>
+              <ol>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ol>
+              <button class="btn">Select</button>
+            </div>
+            <div class="product" id="bass">
+              <div class="level">Bass Trombone</div>
+              <h2>$900</h2>
+              <ol>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ol>
+              <button class="btn">Select</button>
+            </div>
+            <div class="product" id="valve">
+              <div class="level">Valve Trombone</div>
+              <h2>$1200</h2>
+              <ol>
+                <li>Plays similar to a Trumpet</li>
+                <li>Great for Jazz Bands</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+              </ol>
+              <button class="btn">Select</button>
+            </div>
+          </section>
+
+            <footer>
+                <div class="footer">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <span>Copyright 2016, Original Trombones</span>
+                </div>
+          </footer>
+          <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
 </html>
