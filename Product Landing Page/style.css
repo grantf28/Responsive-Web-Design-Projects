@@ -7,8 +7,7 @@
 
 body {
     position: relative;
-    background-image: linear-gradient( 179.7deg,  rgba(197,214,227,1) 2.9%, rgba(144,175,202,1) 97.1% );
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     margin: 0;
     height: 100vh;
@@ -33,6 +32,9 @@ header {
     align-items: center;
 }
 
+header:hover {
+  background-image: linear-gradient( 180.2deg,  rgba(30, 33, 48, 0.808) 6.8%, rgba(68, 137, 172, 0.918) 131% );
+}
 nav {
     width: 100%;
 }
@@ -47,10 +49,10 @@ ul {
     text-decoration:none;
     text-transform: uppercase;
     font-family:'Roboto',sans-serif;
-    font-weight:400;
+    font-weight:600;
     padding:0.5em 2em;
     border:0.16em solid #FFFFFF;
-    color:rgb(214, 211, 211);
+    color:rgb(134, 128, 128);
     transition: all 0.15s;
     border-radius: 30px;
 }
@@ -59,7 +61,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    height: 100%;
+    padding-top: 2em;
 }
 
 .nav-link:hover{
@@ -84,6 +87,18 @@ h1 {
     padding-bottom: 20px;
 }
 
+h2 {
+  font-family: "roboto", monospace;
+  color: rgb(54, 53, 53);
+  padding-top: 1em;
+  font-style: italic;
+  font-weight: 800;
+}
+p {
+  padding-bottom: 1em;
+  font-style: italic;
+  font-family: 'source Code Pro', monospace;
+}
 #email {
     text-decoration:none;
     text-transform: uppercase;
@@ -97,6 +112,16 @@ h1 {
     width: 100%;
     text-align: center;
     box-sizing: border-box;
+    animation: myAnimation 5s ease 1s 1 alternate forwards;
+}
+
+@keyframes myAnimation {
+  50% {
+    box-shadow: 0px 0px 25px orange;
+  }	
+  100% {
+    box-shadow: 1px 1px 8px black inset;
+  }	
 }
 
 #submit-btn {
@@ -106,6 +131,44 @@ h1 {
 #submit {
     color: rgba(32, 143, 37, 0.705);
     font-weight: 700;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-image: linear-gradient( 179.7deg,  rgb(174, 217, 250) 2.9%, rgba(166, 211, 250, 0.61) 97.1% );
+  padding-bottom: 2em;
+}
+
+#features-list {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.5em;
+  text-decoration: none;
+  font-family: monospace;
+}
+
+#money {
+  background: url('money.png') no-repeat;
+  background-position: left;
+  background-size: 40px;
+  padding: 0px 0 3px 50px;
+}
+
+#time {
+  background: url('time.png') no-repeat;
+  background-position: left;
+  background-size: 40px;
+  padding: 0px 0 3px 50px;
+}
+
+#prod {
+  background: url('productivity.png') no-repeat;
+  background-position: left;
+  background-size: 40px;
+  padding: 0px 0 5px 50px;
 }
 
 footer{
@@ -147,10 +210,10 @@ footer{
 
 
   #pricing {
-    margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-image: linear-gradient( 179.7deg,  rgba(166, 211, 250, 0.61) 2.9%, rgba(144,175,202,1) 97.1% );
   }
   
   .product {
@@ -159,18 +222,21 @@ footer{
     align-items: center;
     text-align: center;
     width: calc(100%  / 3);
-    margin: 10px;
-    border: 1px solid #000;
-    border-radius: 3px;
+    margin: 3em;
+    border: 2px solid rgba(141, 118, 118, 0.11);
+    border-radius: 25px;
   }
   
   .product > .level {
-    background-color: #ddd;
+    background-color: rgba(250, 250, 250, 0.11);
     color: black;
     padding: 15px 0;
     width: 100%;
     text-transform: uppercase;
     font-weight: 700;
+    border-radius: 25px;
+    border-bottom: 2px solid rgba(8, 155, 67, 0.192);
+
   }
   
   .product > h2 {
@@ -183,16 +249,21 @@ footer{
   
   .product > ol > li {
     padding: 5px 0;
+    text-align: center;
   }
   
   .product > button {
-    border: 0;
+    border: 2px solid wheat;
+    border-radius: 30px;
+    padding: 0.5em 1.5em;
     margin: 15px 0;
-    background-color: #f1c40f;
-    font-weight: 400;
+    background-color: #d6d4cd00;
+    font-weight: 600;
+    color: rgb(16, 11, 43);
   }
   
   .product > button:hover {
-    background-color: orange;
+    background-color: rgba(133, 241, 191, 0.322);
+    border: 5px solid rgba(19, 241, 12, 0.685);
     transition: background-color 1s;
   }
