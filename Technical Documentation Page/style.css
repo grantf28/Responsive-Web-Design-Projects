@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: minmax(35vh, auto) 1fr;
+    grid-template-columns: minmax(45vh, auto) 1fr;
     grid-template-areas: "navbar maincontent";
     gap: 10vw  ;
 }
