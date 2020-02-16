@@ -4,66 +4,121 @@
 <head>
     <title>Product Landing Page</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 
-<nav id="navbar">
-    <header class="headings" id="nav-heading">Introduction To Python</header>
-    <ul>
-        <li><a href="#Python-Syntax" class="nav-link"></a>Python Syntax</li>
-        <li><a href="#Python-Data-Types" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
-        <li><a href="" class="nav-link"></a></li>
-    </ul>
-</nav>
-<main id="main-doc">
-    <section class="main-section" id="Python-Syntax">
-        <header class="headings">Python Syntax</header>
-        <p class="content">Python syntax can be executed by writing directly in the Command Line or by creating a python
-            file on the server, using the .py file extension, and running it in the Command Line</p>
-        <code>>>> print("Hello, World!")
-            Hello, World!</code>
-    </section>
-    <section class="main-section" id="Python-Data-Types">
-        <header class="headings">Python Data Types</header>
-        <p class="content"></p>
-    </section>
-    <section class="main-section" id="name">
-        <header class="headings"></header>
-        <p class="content"></p>
-    </section>
-    <section class="main-section" id="name">
-        <header class="headings"></header>
-        <p class="content"></p>
-    </section>
-    <section class="main-section" id="name">
-        <header class="headings" id="name"></header>
-        <p class="content"></p>
-    </section>
-    <section class="main-section" id="name">
-        <header class="headings" id="name"></header>
-        <p class="content"></p>
-    </section>
-    <section class="main-section" id="name">
-        <header class="headings" id="name"></header>
-        <p class="content"></p>
-    </section>
-    <section class="main-section" id="name">
-        <header class="headings" id="name"></header>
-        <p class="content"></p>
-    </section>
-    <section class="main-section" id="name">
-        <header class="headings" id="name"></header>
-        <p class="content"></p>
-    </section>
-    <section class="main-section" id="name">
-        <header class="headings" id="name"></header>
-        <p class="content"></p>
-    </section>
-</main>
+<div class="container">
+    <nav id="navbar">
+        <header class="headings" id="nav-heading">Introduction To Python</header>
+        <ul>
+            <li><a href="#Python_Syntax" class="nav-link">Python Syntax</a></li>
+            <li><a href="#Data_Types" class="nav-link">Data Types</a></li>
+            <li><a href="#Python_Loops" class="nav-link">Python Loops</a></li>
+            <li><a href="#Python_Functions" class="nav-link">Python Functions</a></li>
+            <li><a href="#Python_Iterators" class="nav-link">Python Iterators</a></li>
+            <li><a href="#Python_Classes" class="nav-link">Python Classes</a></li>
+            <li><a href="#Python_User_Input" class="nav-link">Python User Input</a></li>
+            <li><a href="#Python_Arrays" class="nav-link">Python Arrays</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Python_Syntax">
+            <header class="headings">Python Syntax</header>
+            <p class="content">Python syntax can be executed by writing directly in the Command Line or by creating a
+                python
+                file on the server, using the .py file extension, and running it in the Command Line</p>
+            <code>>>> print("Hello, World!")
+                Hello, World!</code>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header class="headings">Data Types</header>
+            <p class="content">In programming, data type is an important concept.
+                Variables can store data of different types, and different types can do different things.
+                Python has the following data types built-in by default, in these categories:</p>
+            <ul>
+                <li><b>Text Type: </b><code> str</code></li>
+                <li><b>Numeric Types: </b><code> int, float, complex</code></li>
+                <li><b>Sequence Types: </b><code> list, tuple, range</code></li>
+                <li><b>Mapping Type: </b><code> dict</code></li>
+                <li><b>Set Types: </b><code> set, frozenset</code></li>
+                <li><b>Boolean Type: </b><code> bool</code></li>
+                <li><b>Binary Types: </b><code> bytes, bytearray, memoryview</code></li>
+            </ul>
+            <code>x = 5
+                print(type(x))</code>
+        </section>
+        <section class="main-section" id="Python_Loops">
+            <header class="headings">Python Loops</header>
+            <p class="content">Python has two primitive loop commands:</p>
+            <ul>
+                <li>while loops</li>
+                <li>for loops</li>
+            </ul>
+            <code>i = 1
+                while i < 6: print(i) i +=1 else: print("i is no longer less than 6")</code> 
+        </section> 
+        <section class="main-section" id="Python_Functions">
+            <header class="headings">Python Functions</header>
+            <p class="content">A function is a block of code which only runs when it is called.
+                        You can pass data, known as parameters, into a function.
+                        A function can return data as a result.</p>
+            <code>def my_function():
+                        print("Hello from a function")
+                        my_function()</code>
+        </section>
+        <section class="main-section" id="Python_Iterators">
+            <header class="headings" id="name">Python Iterators</header>
+            <p class="content">An iterator is an object that contains a countable number of values.
+                An iterator is an object that can be iterated upon, meaning that you can traverse through all the
+                values.</p>
+            <code>mytuple = ("apple", "banana", "cherry")
+                myit = iter(mytuple)
+
+                print(next(myit))
+                print(next(myit))
+                print(next(myit))</code>
+        </section>
+        <section class="main-section" id="Python_Classes">
+            <header class="headings">Python Classes</header>
+            <p class="content">Python is an object oriented programming language.
+                Almost everything in Python is an object, with its properties and methods.
+                A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+            <h2>Create a Class</h2>
+            <p>To create a class, use the keyword class:</p>
+            <code>class MyClass:
+                x = 5</code>
+            <h2>The __init__() Function</h2>
+            <p>To understand the meaning of classes we have to understand the built-in __init__() function.
+                All classes have a function called __init__(), which is always executed when the class is being initiated.</p>
+            <p>Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created:</p>
+            <code>class Person:
+                def __init__(self, name, age):
+                  self.name = name
+                  self.age = age
+              
+              p1 = Person("John", 36)
+              
+              print(p1.name)
+              print(p1.age)</code>
+        </section>
+        <section class="main-section" id="Python_User_Input">
+            <header class="headings">Python User Input</header>
+            <p class="content">Python allows for user input.
+                That means we are able to ask the user for input.
+                The method is a bit different in Python 3.6 than Python 2.7.
+                Python 3.6 uses the <code>input()</code>method.
+                Python 2.7 uses the <code>raw_input()</code> method.
+                The following example asks for the username, and when you entered the username, it gets printed on the screen:</p>
+        </section>
+        <section class="main-section" id="Python_Arrays">
+            <header class="headings">Python Arrays</header>
+            <p class="content">An array is a special variable, which can hold more than one value at a time.
+                An array can hold many values under a single name, and you can access the values by referring to an index number.
+            </p>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</div>
+
+</html>
