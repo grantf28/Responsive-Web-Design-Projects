@@ -4,7 +4,7 @@
   "description": "Portfolio Page",
   "main": "index.js",
   "scripts": {
-    "sass": "echo \"SASS PASSED\""
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
   "author": "Grant Fortune",
   "license": "MIT",
