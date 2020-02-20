@@ -9,6 +9,7 @@
   "author": "Grant Fortune",
   "license": "MIT",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "node-sass": "^4.13.1"
   }
 }
