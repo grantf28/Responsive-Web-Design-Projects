@@ -1,25 +1,11 @@
-$primmary-color: #444;
-$secondary-color: rgb(224, 10, 10);
-$show-home-image: true;
-$home-image: url(../dist/img/background.jpg);
-$background-opacity: 0.9;
-
-@mixin background {
-  @if $show-home-image {
-    &#welcome-section {
-      background: $home-image;
-      background-attachment: fixed;
-      background-size: cover;
-    }
-  }
-}
+@import "config";
+@import "menu";
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: $primmary-color;
   @include background;
   color: rgb(255, 255, 255);
   height: 100%;

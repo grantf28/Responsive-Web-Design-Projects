@@ -1,17 +1,53 @@
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  color: #e00a0a;
+  transition: all 0.75s ease-out; }
+  .menu-btn .btn-line {
+    width: 25px;
+    height: 4px;
+    margin: 0 0 5px 0;
+    background: #ec2f0d;
+    color: #e00a0a;
+    transition: all 0.75s ease-out; }
+  .menu-btn.close {
+    transform: rotate(180deg); }
+    .menu-btn.close .btn-line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+      background: linear-gradient(to right, #ff1e00, #ee8244, #b69c0b); }
+    .menu-btn.close .btn-line:nth-child(2) {
+      background: linear-gradient(to right, #ff1e00, #ee8244, #b69c0b);
+      opacity: 0.4;
+      transform: rotate(180deg) translate(0px, 15px); }
+    .menu-btn.close .btn-line:nth-child(3) {
+      transform: rotate(-45deg) translate(8px, -7px);
+      background: linear-gradient(to right, #94803e, #ee8244, #ec6111); }
+
 * {
   box-sizing: border-box; }
 
 body {
-  background: #444;
   color: white;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
-  body#welcome-section {
-    background: url(../dist/img/background.jpg);
+  body#bg-img {
+    background: url(/img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
+    body#bg-img:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(68, 68, 68, 0.9);
+      z-index: -1; }
 
 h1,
 h2,
