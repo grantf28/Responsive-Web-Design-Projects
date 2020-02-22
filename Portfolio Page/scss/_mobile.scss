@@ -1,8 +1,17 @@
 //Widescreens
 @include mediaXL {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 // Desktops and Laptops
 @include mediaLarge {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .project-page {
+    margin-top: 30vh;
+  }
 }
 // Tablets
 @include mediaMed {
@@ -30,11 +39,44 @@
       "job3";
     grid-template-columns: 1fr;
   }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-page {
+    margin-top: 100%;
+  }
+  #contact {
+    height: 50vh;
+  }
 }
 
 //Smartphones
 @include mediaSmall {
   #main-heading {
     margin-top: 10vh;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .project-page {
+    margin-top: 120vh;
+  }
+  #contact {
+    margin-top: 60vh;
+  }
+}
+
+@include mediaXSmall {
+  .home {
+    padding: 0.1rem;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
+  .project-page {
+    margin-top: 170vh;
+  }
+  #contact {
+    margin-top: 90vh;
   }
 }
