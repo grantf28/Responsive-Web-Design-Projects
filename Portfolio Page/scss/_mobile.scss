@@ -43,10 +43,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .project-page {
-    margin-top: 100%;
+    margin-top: 100vh;
   }
   #contact {
-    height: 50vh;
+    margin-top: 50vh;
   }
 }
 
@@ -56,10 +56,10 @@
     margin-top: 10vh;
   }
   .projects {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .project-page {
-    margin-top: 120vh;
+    margin-top: 150vh;
   }
   #contact {
     margin-top: 60vh;
@@ -74,9 +74,9 @@
     grid-template-columns: 1fr;
   }
   .project-page {
-    margin-top: 170vh;
+    margin: 100vh 0;
   }
   #contact {
-    margin-top: 90vh;
+    margin-top: 100vh;
   }
 }

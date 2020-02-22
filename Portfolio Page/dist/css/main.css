@@ -97,8 +97,7 @@
 * {
   box-sizing: border-box;
   margin: 0rem;
-  position: relative;
-  z-index: -3; }
+  position: relative; }
 
 body {
   background: rgba(68, 68, 68, 0.9); }
@@ -120,8 +119,7 @@ main {
       right: 0;
       width: 100%;
       height: 100%;
-      background: rgba(68, 68, 68, 0.9);
-      z-index: -4; }
+      background: rgba(68, 68, 68, 0.6); }
 
 h1,
 h2,
@@ -154,7 +152,7 @@ header {
 .home {
   padding: 4rem;
   height: 100%;
-  z-index: 0; }
+  z-index: 1; }
   .home .icons {
     margin-top: 1rem; }
     .home .icons a {
@@ -172,7 +170,7 @@ header {
       margin-top: 20vh; }
 
 .about-me {
-  padding: 4rem;
+  padding: 2rem;
   height: 100vh; }
 
 .about-info {
@@ -207,7 +205,8 @@ header {
   border-bottom: #e00a0a 5px solid; }
 
 .project-page {
-  padding: 0rem 1rem; }
+  padding: 0rem 3rem;
+  height: 130vh; }
 
 .projects {
   display: grid;
@@ -223,8 +222,9 @@ header {
       transition: all 0.5s ease-out; }
 
 #contact {
-  height: 100%;
-  width: 100%; }
+  height: 100vh;
+  width: 100%;
+  padding: 0rem 3rem; }
 
 .boxes {
   display: flex;
@@ -293,17 +293,17 @@ header {
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .project-page {
-    margin-top: 100%; }
+    margin-top: 100vh; }
   #contact {
-    height: 50vh; } }
+    margin-top: 50vh; } }
 
 @media screen and (max-width: 500px) {
   #main-heading {
     margin-top: 10vh; }
   .projects {
-    grid-template-columns: 1fr; }
+    grid-template-columns: 1fr 1fr; }
   .project-page {
-    margin-top: 120vh; }
+    margin-top: 150vh; }
   #contact {
     margin-top: 60vh; } }
 
@@ -313,6 +313,6 @@ header {
   .projects {
     grid-template-columns: 1fr; }
   .project-page {
-    margin-top: 170vh; }
+    margin: 100vh 0; }
   #contact {
-    margin-top: 90vh; } }
+    margin-top: 100vh; } }
