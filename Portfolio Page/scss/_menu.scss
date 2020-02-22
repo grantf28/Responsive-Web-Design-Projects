@@ -12,7 +12,7 @@
     width: 25px;
     height: 4px;
     margin: 0 0 5px 0;
-    background: rgb(236, 47, 13);
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -95,6 +95,11 @@
     transform: translate3d(-110vw, 0, 0);
     @include easeOut;
 
+    & > a {
+      z-index: 4;
+      color: set-text-color($primary-color);
+    }
+
     &.show {
       transform: translate3d(0, 0, 0);
     }
@@ -112,7 +117,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 400;
-    color: white;
+    color: set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
 
