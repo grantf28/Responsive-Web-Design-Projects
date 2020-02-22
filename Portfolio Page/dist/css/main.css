@@ -91,6 +91,22 @@
 .nav-list:nth-child(4) {
   transition-delay: 0.8s; }
 
+@media screen and (max-width: 768px) {
+  .home {
+    align-items: center;
+    text-align: center; }
+    .home #main-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0rem; } }
+
+@media screen and (max-width: 500px) {
+  #main-heading {
+    margin-top: 10vh; } }
+
 * {
   box-sizing: border-box; }
 

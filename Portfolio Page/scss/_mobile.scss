@@ -1,0 +1,30 @@
+//Widescreens
+@include mediaXL {
+}
+// Desktops and Laptops
+@include mediaLarge {
+}
+// Tablets
+@include mediaMed {
+  .home {
+    align-items: center;
+    text-align: center;
+
+    #main-heading {
+      line-height: 1;
+      margin-bottom: 1rem;
+    }
+  }
+  ul.menu-nav {
+    float: none;
+    width: 100%;
+    min-height: 0rem;
+  }
+}
+
+//Smartphones
+@include mediaSmall {
+  #main-heading {
+    margin-top: 10vh;
+  }
+}
