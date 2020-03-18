@@ -62,7 +62,7 @@ header {
       color: set-text-color($primary-color);
       &:hover {
         color: $secondary-color;
-        transition: all 1.75s ease-out;
+        transition: all 0.75s ease-out;
       }
     }
   }
@@ -183,7 +183,7 @@ header {
   border: 0rem;
   margin-bottom: 0.3rem;
   &:hover {
-    background: $secondary-color;
+    background: $primary-color;
     color: set-text-color($secondary-color);
   }
 }
@@ -196,7 +196,7 @@ header {
 
 .btn-light {
   @extend .btn;
-  background: lighten($color: $primary-color, $amount: 50);
+  background: lighten($color: $primary-color, $amount: 20);
   color: #fff;
 }
 
