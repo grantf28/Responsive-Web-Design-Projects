@@ -304,7 +304,7 @@ header {
   .projects {
     grid-template-columns: 1fr; }
   .project-page {
-    margin-top: 100vh; }
+    margin-top: 150vh; }
   #contact {
     margin-top: 60vh; } }
 
@@ -314,6 +314,6 @@ header {
   .projects {
     grid-template-columns: 1fr; }
   .project-page {
-    margin: 50vh 0; }
+    margin: 70vh 0; }
   #contact {
     margin-top: 100vh; } }
