@@ -102,9 +102,9 @@
 body {
   background: rgba(16, 95, 39, 0.9); }
 
-iframe {
-  width: 50%;
-  height: 50%; }
+.iframe {
+  width: 750px;
+  height: 750px; }
 
 main {
   color: #fff;
@@ -273,13 +273,17 @@ header {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  iframe {
+    width: 750px;
+    height: 750px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
-  iframe {
-    width: 600px; }
+  .iframe {
+    width: 45vw;
+    height: 45vh; }
   .project-page {
     margin-top: 30vh; } }
 
@@ -290,7 +294,8 @@ header {
     .home #main-heading {
       line-height: 1;
       margin-bottom: 1rem; }
-  iframe {
+  .iframe {
+    height: 400px;
     width: 400px; }
   ul.menu-nav {
     float: none;
@@ -309,23 +314,25 @@ header {
 @media screen and (max-width: 500px) {
   #main-heading {
     margin-top: 10vh; }
-  iframe {
-    width: 400px; }
+  .iframe {
+    height: 300px;
+    width: 300px; }
   .projects {
     grid-template-columns: 1fr; }
   .project-page {
     margin-top: 150vh; }
   #contact {
-    margin-top: 60vh; } }
+    margin-top: 100vh; } }
 
 @media screen and (max-width: 375px) {
   .home {
     padding: 0.1rem; }
-  iframe {
+  .iframe {
+    height: 300px;
     width: 300px; }
   .projects {
     grid-template-columns: 1fr; }
   .project-page {
-    margin: 70vh 0; }
+    margin: 200vh 0; }
   #contact {
-    margin-top: 100vh; } }
+    margin-top: 120vh; } }
