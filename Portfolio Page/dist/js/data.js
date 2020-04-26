@@ -10,14 +10,17 @@ function makeChart(players) {
       options: {
         responsive: true,
 					hoverMode: 'index',
-                    stacked: false,
-                    maintainAspectRatio: false,
+                    stacked: true,
+                    maintainAspectRatio: true,
                     legend: {
                         display: false,
+                        
                     },
 					title: {
 						display: true,
-						text: 'SA Coronavirus Infections'
+            text: 'SA COVID-19\nTOTAL CASES: ' + weeksData.slice(-1).pop() + ' DEATHS: '+ playerdata.slice(-1).pop(),
+            fontSize: 20,
+            fontColor: 'red'
 					},
         scales: {
           xAxes: [

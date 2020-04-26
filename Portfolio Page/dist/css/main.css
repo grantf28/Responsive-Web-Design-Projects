@@ -102,6 +102,10 @@
 body {
   background: rgba(16, 95, 39, 0.9); }
 
+iframe {
+  width: 50%;
+  height: 50%; }
+
 main {
   color: #fff;
   height: 100vh;
@@ -274,6 +278,8 @@ header {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
+  iframe {
+    width: 600px; }
   .project-page {
     margin-top: 30vh; } }
 
@@ -284,6 +290,8 @@ header {
     .home #main-heading {
       line-height: 1;
       margin-bottom: 1rem; }
+  iframe {
+    width: 400px; }
   ul.menu-nav {
     float: none;
     width: 100%;
@@ -301,6 +309,8 @@ header {
 @media screen and (max-width: 500px) {
   #main-heading {
     margin-top: 10vh; }
+  iframe {
+    width: 400px; }
   .projects {
     grid-template-columns: 1fr; }
   .project-page {
@@ -311,6 +321,8 @@ header {
 @media screen and (max-width: 375px) {
   .home {
     padding: 0.1rem; }
+  iframe {
+    width: 300px; }
   .projects {
     grid-template-columns: 1fr; }
   .project-page {
